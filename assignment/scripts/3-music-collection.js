@@ -15,8 +15,22 @@ collection.push(album);
 return(album);
 
 }
-console.log(addToCollection(myCollection, "somali","khdra dahir","1991"))
 
+console.log(addToCollection(myCollection, "qarami" , "hamda" , "1890"));
+console.log(addToCollection(myCollection, "somali","khdra dahir","1991"));
+console.log(addToCollection(myCollection, "bahati","mr nice","2005"));
+console.log(addToCollection(myCollection, "kidalip","mwalimu","2006"));
+console.log(addToCollection(myCollection, "ciigal","fartun birimo","1992"))
+console.log(addToCollection(myCollection, "maryan","hawa dahir","1969"))
+
+// second function
+function showCollection(collection) {
+  for (let singleCollection of collection) {
+    console.log(`${singleCollection.title} by ${singleCollection.artist}, published in ${singleCollection.yearPublished}`);
+  }
+}
+
+showCollection(myCollection);
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
